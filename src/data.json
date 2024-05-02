@@ -1,0 +1,15 @@
+[
+    {
+    "Services" : {
+        "name": "Wifi",
+        "description": "Enjoy 24/7 fast internet speeds up to 65mbps"
+    },
+    "Rooms" : {
+        "name": "Single",
+        "description": "25sqm single room with optimum comfort for your consideration",
+        "services": "wifi",
+        "price": "80,000/night",
+        "currency": "UGX"
+    }
+    }
+]
