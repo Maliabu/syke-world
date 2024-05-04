@@ -12,11 +12,11 @@ function Booking(){
     return(
         <div>
         <div>
-            <div className="page-2 rooms black-card">
+            <div className="page-2 rooms back">
                 <h2 className="start margin-top">Account Details</h2>
                 <div className="center">
                     <Grid container>
-                        <Grid item xs={6}><h5 className="end lh">Guest Account</h5></Grid>
+                        <Grid item xs={6}><p className="end lh p-xs">Guest Account</p></Grid>
                         <Grid item alignContent="center" xs={6}><Avatar><AccountCircleRounded/></Avatar></Grid>
                     </Grid>
                 </div>

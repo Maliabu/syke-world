@@ -7,7 +7,7 @@ function About(){
     return(
         <div>
         <div>
-            <div className="page-2 rooms black-card">
+            <div className="page-2 rooms back">
                 <h1 className="start margin-top">About Syke World</h1>
                 <h2 className="">Who we are</h2>
                 <Grid container spacing={1}>
@@ -15,8 +15,8 @@ function About(){
                     <Card>
                         <CardContent className="start">
                             <LocationCityRounded/>
-                            <h5 className="m-t-2 lh p-x">Syke world is a hotel in paidha Town Council, Okoro County, Nothern Uganda - LandMark Place</h5>
-                            <h5 className="m-t-2 lh p-x">Syke World aspires to offer world class hospitality services tailored to meet individual client needs. </h5>
+                            <p className="m-t-2 lh p-x">Syke world is a hotel in paidha Town Council, Okoro County, Nothern Uganda - LandMark Place</p>
+                            <p className="m-t-2 lh p-x">Syke World aspires to offer world class hospitality services tailored to meet individual client needs. </p>
                         </CardContent>
                     </Card>
                     <Grid container spacing={0}>
@@ -25,7 +25,7 @@ function About(){
                         <CardContent className="start">
                         <PinDropRounded/>
                             <h2 className="m-b-0 p-x">Location</h2>
-                            <h5 className="m-t-2 p-x lh">Paidha</h5>
+                            <p className="m-t-2 p-x lh">Paidha</p>
                         </CardContent>
                         </Card>
                         </Grid>
@@ -34,7 +34,7 @@ function About(){
                         <CardContent className="start">
                         <CodeRounded/>
                             <h2 className="m-b-0 p-x">Plus Code</h2>
-                            <h5 className="m-t-2 p-x lh">CX7J+Q9 Paidha</h5>
+                            <p className="m-t-2 p-x lh">CX7J+Q9 Paidha</p>
                         </CardContent>
                         </Card>
                         </Grid>
@@ -51,7 +51,7 @@ function About(){
                 <div>
                     <h2>Client Reviews</h2>
                     <Grid container spacing={0}>
-                        <Grid item xs={6} md={4} lg={4}>
+                        <Grid item xs={12} md={4} lg={4}>
                         <Card>
                             <CardContent>
                             <div className="center">
@@ -62,10 +62,10 @@ function About(){
                             </CardContent>
                         </Card>
                         </Grid>
-                        <Grid item xs={6} md={8} lg={8}>
+                        <Grid item xs={12} md={8} lg={8}>
                             <Card>
                                 <CardContent>
-                                    <h5>Follow us and more reviews on social media</h5>
+                                    <p>Follow us and more reviews on social media</p>
                                     <a href="https://www.facebook.com/p/Syke-World-100057352633954/" content="social media review" className="active"><Facebook/></a>
                                 </CardContent>
                             </Card>

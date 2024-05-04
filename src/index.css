@@ -12,9 +12,9 @@ code {
     monospace;
 }
 
-h1, h2, h4{
+h1, h2, h4, h3{
   text-transform: uppercase !important;
-  font-weight: 400 !important;
+  font-weight: 400;
 }
 .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary{
   border-radius: 0% !important;
@@ -22,15 +22,14 @@ h1, h2, h4{
   padding-right: 20% !important;
 }
 .main-page{
-  background: -webkit-linear-gradient(bottom, #282c3400, #282c3400), url("./images/syke.png");
+  background: -webkit-linear-gradient(bottom, #16181c00, #16181c00), url("./images/syke.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 30% 10% 0% 0%;
+  padding: 20% 0% 0% 0%;
+  margin: 0 !important;
 }
 .back{
-  background-image: url("images/back.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #1f2127;
 }
 .back-flipped{
   background-image: url("images/back-flipped.png");
@@ -38,14 +37,16 @@ h1, h2, h4{
   background-repeat: no-repeat;
 }
 .black-card{
-  background-color: #16181c !important;
+  background-color: #16181c;
+  /* background-color: #f5bb5f !important; */
   padding: 1% 1% 3% 1%;
 }
 .MuiCard-paper{
-  background-color: #16181c !important;
+  background-color: #16181c;
+  /* background-color: #f5bb5f !important; */
 }
 .margin-top{
-  margin-top: 5%;
+  margin-top: 8%;
 }
 .margin-bottom{
   margin-bottom: 5%;
@@ -58,8 +59,7 @@ h1, h2, h4{
 }
 .MuiPaper-root.MuiCard-root.MuiPaper-elevation1.MuiPaper-rounded{
  padding: 1% 1% 5% 1% !important;
- background-color: #2B3039 !important;
- color: rgb(152, 152, 153);
+ color: rgb(223, 223, 225);
  box-shadow: none !important;
 }
 .MuiSvgIcon-root.MuiSelect-icon{
@@ -81,16 +81,33 @@ h1, h2, h4{
   color: rgb(152, 152, 153) !important;
 } */
 .MuiDrawer-modal{
-  background-color: #22262c1f !important;
+  background-color: #ffffff00 !important;
+}
+.MuiBackdrop-root{
+  opacity: 0 !important;
+  transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .MuiDrawer-paper{
-  background-color: #16181c !important;
-  color: rgb(152, 152, 153) !important;
-  margin: 0 !important;
-  width: 60% !important;
+  background: -webkit-linear-gradient(top, #0a0a0a95, #0c0c0c92), url("./images/background.jpg");
+  background-size: cover;
+  color: rgb(210, 210, 211) !important;
+  margin-top: 5% !important;
+  width: 70%;
+  margin-left: 0% !important;
+}
+.MuiDrawer-paper.right-drawer{
+  background: -webkit-linear-gradient(top, #0a0a0a95, #0c0c0c92), url("./images/background.jpg");
+  background-size: cover;
+  color: rgb(210, 210, 211) !important;
+  margin-top: 5% !important;
+  width: 40%;
+  margin-left: 0% !important;
+}
+.check{
+  width: 80% !important;
 }
 .MuiPaper-root.MuiCard-root.MuiPaper-elevation1.MuiPaper-rounded{
-  background-color: #1a1d22 !important;
+  background-color: #16181c;
   border-radius: 0px !important;
 }
 .bb{
@@ -104,6 +121,7 @@ h1, h2, h4{
   color: rgb(152, 152, 153) !important;
 }
 .MuiCardContent-root{
+  background-color: #16181c;
   padding: 0 !important;
 }
 .card-image{
@@ -112,12 +130,23 @@ h1, h2, h4{
 }
 .nav-top{
   z-index: 1;
-  margin-top: 0%;
-  padding: 1% 0%;
+  margin-top: 0% !important;
   position: fixed;
 }
+.nav-bottom{
+  margin-top: 42% !important;
+  margin-right: 0% !important;
+  padding-right: 0% !important;
+  width: 100% !important;
+}
+.nav-bottom-small{
+  margin-top: 80% !important;
+  margin-right: 0% !important;
+  padding-right: 0% !important;
+  width: 100% !important;
+}
 .transparency{
-  background-color: #1a1d22fd;
+  background-color: #1a1c21;
 }
 .transparency-white{
   background-color: #ffffff;

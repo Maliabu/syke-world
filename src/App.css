@@ -12,6 +12,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.MuiGrid-root.rooms.nav-top.MuiGrid-container.MuiGrid-align-items-xs-center.MuiGrid-align-content-xs-center.MuiGrid-justify-content-xs-center{
+  margin: 0% !important;
+  padding: 0% !important;
+}
 .rooms-page{
   background-image: url("./images/Bold\ and\ Beautiful_\ Transform\ Your\ Space\ with\ a\ Striking\ Black\ Bedroom.png");
   background-size: cover;
@@ -19,7 +23,7 @@
   color: rgb(225, 225, 227);
 }
 .App-header {
-  background-color: #282c34;
+  background-color: #16181c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,16 +40,15 @@
   text-align: start;
 }
 .end{
-  text-align: end;
-  align-self: end;
-  align-items: end;
-  align-content: end;
-  margin-right: 10%;
+  text-align: end !important;
+  align-self: end !important;
+  align-items: end !important;
+  align-content: end !important;
 }
 .MuiInputBase-input.MuiOutlinedInput-input{
   border: 0px solid rgb(203, 204, 204) !important;
   border-radius: 5px !important;
-  background-color: #282c347c !important;
+  background-color: #16181c7c !important;
 }
 .MuiFormLabel-root.MuiInputLabel-root.p-x.MuiInputLabel-formControl.MuiInputLabel-animated{
   margin-left: 10px !important;
@@ -61,12 +64,18 @@
   background-repeat: no-repeat;
   color: #e9e9ea !important;
 }
+.pointer{
+  cursor: pointer;
+}
 .PrivateNotchedOutline-legendLabelled-14{
   color: rgb(152, 152, 153) !important;
   border-color: rgb(152, 152, 153) !important;
 }
 .p-x{
   padding: 0 5% 0 5%;
+}
+.p-xs{
+  padding: 0 2% 0 2%;
 }
 .margin-left-nav{
   padding-left: 10%;
@@ -101,14 +110,19 @@
 }
 .actively{
   color: #f5bb5f;
-  font-weight: bold;
 }
 .tab-item{
   cursor: pointer;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
-h3{
+.right-drawer{
+  height: 40% !important;
+}
+.message-down{
+  margin-top: 10% !important;
+}
+h3, h2{
   line-height: 90% !important;
 }
 h6.login{

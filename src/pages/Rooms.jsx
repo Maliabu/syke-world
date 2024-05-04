@@ -28,7 +28,7 @@ function Rooms(props){
     };
     return(
         <div>
-            <div className="page-2 rooms bg-oranger">
+            <div className="page-2 rooms back">
                 <h1 className="start margin-top">Book with us</h1>
                 <h2 className="">Our Rooms</h2>
                 <div>
@@ -65,7 +65,7 @@ function Rooms(props){
                     <Card>
                         <CardContent className="start">
                             <h2 className="margin-top margin-bottom p-x">Single</h2>
-                            <h5 className="m-t-2 p-x lh">Dont be fooled, our single room is not pressed for space. Come and enjoy luxury in our simple yet comfortable and yet affordable room</h5>
+                            <p className="m-t-2 p-x lh">Dont be fooled, our single room is not pressed for space. Come and enjoy luxury in our simple yet comfortable and yet affordable room</p>
                             <div className="transparency padding-3">
                             <Grid container spacing={1}>
                                 <Grid item xs={2}><Wifi/></Grid>
@@ -102,7 +102,7 @@ function Rooms(props){
                     <Card>
                         <CardContent className="start">
                             <h2 className="margin-top margin-bottom p-x">Double</h2>
-                            <h5 className="m-t-2 p-x lh">With the double room, we bring you luxury and comfort in a much wider space so that you feel free and as comfortable as you wish to get. We have a generously spacious wardrobe and bath</h5>
+                            <p className="m-t-2 p-x lh">With the double room, we bring you luxury and comfort in a much wider space so that you feel free and as comfortable as you wish to get. We have a generously spacious wardrobe and bath</p>
                             <div className="transparency padding-3">
                             <Grid container spacing={1}>
                                 <Grid item xs={2}><Wifi/></Grid>
@@ -144,7 +144,7 @@ function Rooms(props){
                     <Card>
                         <CardContent className="start">
                             <h2 className="margin-top margin-bottom p-x">Deluxe</h2>
-                            <h5 className="m-t-2 p-x lh">Yes it so much more than just luxury and comfort, its Deluxe, its just perfect for you to be everywhere and yet in one place. Enough room, cozy with a spacious bath and so much more.</h5>
+                            <p className="m-t-2 p-x lh">Yes it so much more than just luxury and comfort, its Deluxe, its just perfect for you to be everywhere and yet in one place. Enough room, cozy with a spacious bath and so much more.</p>
                             <div className="transparency padding-3">
                             <Grid container spacing={1}>
                                 <Grid item xs={2}><Wifi/></Grid>

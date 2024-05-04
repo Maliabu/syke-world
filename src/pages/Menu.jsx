@@ -11,7 +11,7 @@ import Tea from '../images/tea.png'
 function Menu(){
     return(
         <div>
-            <div className="page-2 rooms">
+            <div className="page-2 rooms back">
                 <h1 className="start margin-top">Take a Look</h1>
                 <h2 className="">Our Breakfast Treat</h2>
                 <Grid container spacing={2}>
@@ -20,7 +20,7 @@ function Menu(){
                         <CardContent className="start">
                             <img src={Pilao} alt="rooms" className="card-image"/>
                             <h2 className="m-b-0 p-x">Pilao</h2>
-                            <h5 className="m-t-2 p-x lh">There's nothing quite like a fullfilling meal to start or brunch your day</h5>
+                            <p className="m-t-2 p-x lh">There's nothing quite like a fullfilling meal to start or brunch your day</p>
                         </CardContent>
                     </Card>
                 </Grid>
@@ -29,7 +29,7 @@ function Menu(){
                         <CardContent className="start">
                             <img src={Gnuts} alt="rooms" className="card-image"/>
                             <h2 className="m-b-0 p-x">Peanuts</h2>
-                            <h5 className="m-t-2 p-x lh">Locally farmed and roasted for your atmost home away from home experience</h5>
+                            <p className="m-t-2 p-x lh">Locally farmed and roasted for your atmost home away from home experience</p>
                         </CardContent>
                     </Card>
                 </Grid>
@@ -38,7 +38,7 @@ function Menu(){
                         <CardContent className="start">
                             <img src={Katogo} alt="rooms" className="card-image"/>
                             <h2 className="m-b-0 p-x">Katogo</h2>
-                            <h5 className="m-t-2 p-x lh">A deliciously confirmed meal that combines lots of flavor to start your day</h5>
+                            <p className="m-t-2 p-x lh">A deliciously confirmed meal that combines lots of flavor to start your day</p>
                         </CardContent>
                     </Card>
                 </Grid>
@@ -47,7 +47,7 @@ function Menu(){
                         <CardContent className="start">
                             <img src={Pastry} alt="rooms" className="card-image"/>
                             <h2 className="m-b-0 p-x">Pastry</h2>
-                            <h5 className="m-t-2 p-x lh">Fresh from the oven comes cakes, doughnuts and so much more to accompany your chai</h5>
+                            <p className="m-t-2 p-x lh">Fresh from the oven comes cakes, doughnuts and so much more to accompany your chai</p>
                         </CardContent>
                     </Card>
                 </Grid>
@@ -60,9 +60,9 @@ function Menu(){
                     <Card>
                         <CardContent className="start">
                             <h2 className="m-b-0 p-x">Coffee</h2>
-                            <h5 className="m-t-2 p-x lh">brewed from the roasted and ground seeds of the tropical evergreen coffee plants of African origin</h5>
+                            <p className="m-t-2 p-x lh">brewed from the roasted and ground seeds of the tropical evergreen coffee plants of African origin</p>
                             <h2 className="m-b-0 p-x">Chai/Tea</h2>
-                            <h5 className="m-t-2 p-x lh">Come enjoy some of the best tea right here at the heart of Paidha Town</h5>
+                            <p className="m-t-2 p-x lh">Come enjoy some of the best tea right here at the heart of Paidha Town</p>
                         </CardContent>
                     </Card>
                 </Grid>
