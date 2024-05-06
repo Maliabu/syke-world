@@ -22,6 +22,18 @@
   background-repeat: no-repeat;
   color: rgb(225, 225, 227);
 }
+.cover{
+  background-image: url("./images/cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(225, 225, 227);
+}
+.back-card{
+  background-image: url("./images/card.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: rgb(225, 225, 227);
+}
 .App-header {
   background-color: #16181c;
   min-height: 100vh;
@@ -59,10 +71,24 @@
   color: #f5bb5f !important;
 }
 .bg-oranger{
-  background: -webkit-linear-gradient(top, #0a0a0a95, #0c0c0c92), url("./images/background.jpg");
+  background: -webkit-linear-gradient(top, #0a0a0aaf, #0c0c0cad), url("./images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #e9e9ea !important;
+}
+.bg-orange{
+  background-color: #f5bb5f !important;
+  color: #16181c !important;
+}
+.bg-oranges{
+  background-color: #c8994e !important;
+  color: #16181c !important;
+}
+.button-border{
+  border: 1px solid white !important;
+}
+.small{
+  font-size: small !important;
 }
 .pointer{
   cursor: pointer;

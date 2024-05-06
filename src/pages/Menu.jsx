@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, Grid } from "@material-ui/core";
+import { Card, CardContent, Grid, Hidden } from "@material-ui/core";
 import '../App.css'
 import Pilao from '../images/Pilao.png'
 import Gnuts from '../images/Gnuts.png'
@@ -12,7 +12,8 @@ function Menu(){
     return(
         <div>
             <div className="page-2 rooms back">
-                <h1 className="start margin-top">Take a Look</h1>
+            <Hidden smDown><h2 className="start margin-top">take a look!</h2></Hidden>
+            <Hidden smUp><h2 className="start margin-top-syke">take a look!</h2></Hidden>
                 <h2 className="">Our Breakfast Treat</h2>
                 <Grid container spacing={2}>
                 <Grid item xs={8} md={3} lg={3}>

@@ -3,7 +3,7 @@ import { Box, Grid, FormControl, InputLabel, FormHelperText, Button, Select, Men
 import {LocalizationProvider} from '@mui/x-date-pickers'
 import {AdapterDayjs} from '@mui/x-date-pickers/AdapterDayjs/AdapterDayjs'
 import { DatePicker } from "@mui/x-date-pickers";
-import Check from '../images/check.png'
+// import Check from '../images/check.png'
 
 function CheckAvailability(){
     return(
@@ -44,7 +44,7 @@ function CheckAvailability(){
                 </Grid>
                     </Grid>
                     <div className="p-y">
-                <Button variant="contained" color="primary">SUBMIT CHECK</Button></div>
+                <Button variant="outlined" color="primary">SUBMIT CHECK</Button></div>
                 </div>
                 </Grid>
             </Grid>

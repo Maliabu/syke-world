@@ -12,10 +12,10 @@ function Auth(){
     const nextButton = () => {
         if (step === 1)
         {return (
-            <Button color="primary" variant="contained">Login</Button>
+            <Button color="primary" variant="outlined">Login</Button>
         )} else {
             return (
-                <Button color="primary" variant="contained">Next</Button>
+                <Button color="primary" variant="outlined">Next</Button>
             )
         }
     }

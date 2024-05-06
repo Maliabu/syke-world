@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Avatar} from "@material-ui/core";
+import { Grid, Avatar, Hidden} from "@material-ui/core";
 import '../App.css'
 import { AccountCircleRounded } from "@material-ui/icons";
 import Visa from '../images/Visa Payment Card Logo PNG vector in SVG, PDF, AI, CDR format.jpeg'
@@ -13,7 +13,8 @@ function Booking(){
         <div>
         <div>
             <div className="page-2 rooms back">
-                <h2 className="start margin-top">Account Details</h2>
+            <Hidden smDown><h2 className="start margin-top">account details</h2></Hidden>
+            <Hidden smUp><h2 className="start margin-top-syke">account details</h2></Hidden>
                 <div className="center">
                     <Grid container>
                         <Grid item xs={6}><p className="end lh p-xs">Guest Account</p></Grid>

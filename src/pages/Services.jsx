@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardContent, Grid } from "@material-ui/core";
+import { Card, CardContent, Grid, Hidden } from "@material-ui/core";
 import '../App.css'
 import {Wifi, DirectionsCarRounded, SecurityRounded, RoomServiceRounded, LocalBarRounded, LocalLaundryServiceRounded, BookRounded, RestaurantMenuRounded} from "@material-ui/icons";
 
@@ -8,7 +8,8 @@ function Services(){
         <div>
         <div>
             <div className="page-2 rooms back">
-                <h1 className="start margin-top">Services</h1>
+            <Hidden smDown><h2 className="start margin-top">services</h2></Hidden>
+            <Hidden smUp><h2 className="start margin-top-syke">services</h2></Hidden>
                 <h2 className="">What we offer</h2>
                 <Grid container spacing={2}>
                 <Grid item xs={12} md={3} lg={3}>

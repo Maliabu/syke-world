@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Card, CardContent, Grid, Button } from "@material-ui/core";
+import { Grid, Button, Hidden } from "@material-ui/core";
 import Room1 from '../images/room1.png'
 import Room2 from '../images/room2.png'
 import Room1Wardrobe from '../images/room1-wardrobe.png'
@@ -29,23 +29,24 @@ function Rooms(props){
     return(
         <div>
             <div className="page-2 rooms back">
-                <h1 className="start margin-top">Book with us</h1>
+            <Hidden smDown><h2 className="start margin-top">book with us</h2></Hidden>
+            <Hidden smUp><h2 className="start margin-top-syke">book with us</h2></Hidden>
                 <h2 className="">Our Rooms</h2>
                 <div>
-                <Grid container spacing={0} className="transparency p-y">
+                <Grid container spacing={0} className="bg-oranger">
                     <Grid item xs={4}>
                     <TabItem title={<h2>Single</h2>} onClick = {handleTab6} id="tab6" activeTab={activeTab} setActiveTab={setActiveTab}/>
                     </Grid>
                     <Grid item xs={4}>
-                    <TabItem title={<h2>Double</h2>} onClick = {handleTab7} id="tab7" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                    <TabItem title={<h2 className="tabs">Double</h2>} onClick = {handleTab7} id="tab7" activeTab={activeTab} setActiveTab={setActiveTab}/>
                     </Grid>
                     <Grid item xs={4}>
-                    <TabItem title={<h2>Deluxe</h2>} onClick = {handleTab8} id="tab8" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                    <TabItem title={<h2 className="tabs">Deluxe</h2>} onClick = {handleTab8} id="tab8" activeTab={activeTab} setActiveTab={setActiveTab}/>
                     </Grid>
                 </Grid>
                 </div>
                 <TabContent id="tab6" activeTab={activeTab}>
-                <div className="transparency">
+                <div className="back-flipped">
                 <Grid container spacing={0}>
                 <Grid item xs={12} md={8} lg={9}>
                     <Grid container spacing={2}>
@@ -62,11 +63,9 @@ function Rooms(props){
                     </Grid>
                 </Grid>
                 <Grid item xs={12} md={4} lg={3}>
-                    <Card>
-                        <CardContent className="start">
-                            <h2 className="margin-top margin-bottom p-x">Single</h2>
-                            <p className="m-t-2 p-x lh">Dont be fooled, our single room is not pressed for space. Come and enjoy luxury in our simple yet comfortable and yet affordable room</p>
-                            <div className="transparency padding-3">
+                            <h2 className="padding">Single</h2>
+                            <p className="padding lh">Dont be fooled, our single room is not pressed for space. Come and enjoy luxury in our simple yet comfortable and yet affordable room</p>
+                            <div className="padding-3">
                             <Grid container spacing={1}>
                                 <Grid item xs={2}><Wifi/></Grid>
                                 <Grid item xs={2}><RestaurantMenuRounded/></Grid>
@@ -75,14 +74,13 @@ function Rooms(props){
                             </Grid>
                             </div>
                             <h2 className="p-x">UGX 80,000 / Night</h2>
-                            <Button variant="contained" color="primary" onClick={props.handletab5}>Book Single</Button>
-                        </CardContent>
-                    </Card>
+                            <Button variant="outlined" color="primary" onClick={props.handletab5}>Book Single</Button>
+                        
                 </Grid>
             </Grid>
             </div></TabContent>
                 <TabContent id="tab7" activeTab={activeTab}>
-                <div className="transparency">
+                <div className="back-flipped">
                 <Grid container spacing={0}>
                 <Grid item xs={12} md={8} lg={9}>
                     <Grid container spacing={2}>
@@ -99,11 +97,9 @@ function Rooms(props){
                     </Grid>
                 </Grid>
                 <Grid item xs={12} md={4} lg={3}>
-                    <Card>
-                        <CardContent className="start">
-                            <h2 className="margin-top margin-bottom p-x">Double</h2>
-                            <p className="m-t-2 p-x lh">With the double room, we bring you luxury and comfort in a much wider space so that you feel free and as comfortable as you wish to get. We have a generously spacious wardrobe and bath</p>
-                            <div className="transparency padding-3">
+                            <h2 className="padding">Double</h2>
+                            <p className="padding lh">With the double room, we bring you luxury and comfort in a much wider space so that you feel free and as comfortable as you wish to get. We have a generously spacious wardrobe and bath</p>
+                            <div className="padding-3">
                             <Grid container spacing={1}>
                                 <Grid item xs={2}><Wifi/></Grid>
                                 <Grid item xs={2}><RestaurantMenuRounded/></Grid>
@@ -114,14 +110,13 @@ function Rooms(props){
                             </Grid>
                             </div>
                             <h2 className="p-x">UGX 120,000 / Night</h2>
-                            <Button variant="contained" color="primary" onClick={props.handletab5}>Book Double</Button>
-                        </CardContent>
-                    </Card>
+                            <Button variant="outlined" color="primary" onClick={props.handletab5}>Book Double</Button>
+                        
                 </Grid>
             </Grid>
             </div></TabContent>
                 <TabContent id="tab8" activeTab={activeTab}>
-                <div className="transparency">
+                <div className="back-flipped">
                 <Grid container spacing={0}>
                 <Grid item xs={12} md={8} lg={9}>
                     <Grid container spacing={2}>
@@ -141,11 +136,9 @@ function Rooms(props){
                     </Grid>
                 </Grid>
                 <Grid item xs={12} md={4} lg={3}>
-                    <Card>
-                        <CardContent className="start">
-                            <h2 className="margin-top margin-bottom p-x">Deluxe</h2>
-                            <p className="m-t-2 p-x lh">Yes it so much more than just luxury and comfort, its Deluxe, its just perfect for you to be everywhere and yet in one place. Enough room, cozy with a spacious bath and so much more.</p>
-                            <div className="transparency padding-3">
+                            <h2 className="padding">Deluxe</h2>
+                            <p className="padding lh">Yes it so much more than just luxury and comfort, its Deluxe, its just perfect for you to be everywhere and yet in one place. Enough room, cozy with a spacious bath and so much more.</p>
+                            <div className="padding-3">
                             <Grid container spacing={1}>
                                 <Grid item xs={2}><Wifi/></Grid>
                                 <Grid item xs={2}><RestaurantMenuRounded/></Grid>
@@ -157,9 +150,8 @@ function Rooms(props){
                             </Grid>
                             </div>
                             <h2 className="p-x">UGX 160,000 / Night</h2>
-                            <Button variant="contained" color="primary" onClick={props.handletab5}>Book Deluxe</Button>
-                        </CardContent>
-                    </Card>
+                            <Button variant="outlined" color="primary" onClick={props.handletab5}>Book Deluxe</Button>
+                        
                 </Grid>
             </Grid>
             </div></TabContent>

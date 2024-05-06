@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, FormControl, InputLabel, FormHelperText, Button, Select, MenuItem, Input } from "@material-ui/core";
+import { Box, Grid, FormControl, InputLabel, FormHelperText, Button, Input } from "@material-ui/core";
 import {LocalizationProvider} from '@mui/x-date-pickers'
 import {AdapterDayjs} from '@mui/x-date-pickers/AdapterDayjs/AdapterDayjs'
 import { DatePicker } from "@mui/x-date-pickers";
@@ -37,7 +37,7 @@ function Login(){
                 </Grid>
                 <h5>Dont have an account? Create Account</h5>
                     <div className="margin-top margin-bottom">
-                <Button variant="contained" color="primary">Login</Button></div>
+                <Button variant="outlined" color="primary">Login</Button></div>
                 </div>
             </Grid>
             </Grid>

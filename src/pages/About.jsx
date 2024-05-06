@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Card, CardContent, Grid } from "@material-ui/core";
+import { Avatar, Card, CardContent, Grid, Hidden } from "@material-ui/core";
 import '../App.css'
 import {PinDropRounded, CodeRounded, LocationCityRounded, Facebook} from "@material-ui/icons";
 
@@ -8,7 +8,8 @@ function About(){
         <div>
         <div>
             <div className="page-2 rooms back">
-                <h1 className="start margin-top">About Syke World</h1>
+            <Hidden smDown><h2 className="start margin-top">about syke world</h2></Hidden>
+            <Hidden smUp><h2 className="start margin-top-syke">about syke world</h2></Hidden>
                 <h2 className="">Who we are</h2>
                 <Grid container spacing={1}>
                 <Grid item xs={12} md={6} lg={6}>

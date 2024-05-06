@@ -70,7 +70,7 @@ function SignUp(){
                 </Grid>
                     </Grid>
                     <div className="margin-top margin-bottom">
-                <Button variant="contained" color="primary">Submit</Button></div>
+                <Button variant="outlined" color="primary">Submit</Button></div>
                 </div>
                 </Grid>
             </Grid>

@@ -3,7 +3,6 @@ import { Box, Grid, FormControl, InputLabel, FormHelperText, Button, Select, Men
 import {LocalizationProvider} from '@mui/x-date-pickers'
 import {AdapterDayjs} from '@mui/x-date-pickers/AdapterDayjs/AdapterDayjs'
 import { DatePicker } from "@mui/x-date-pickers";
-import Check from '../images/check.png'
 
 function Booking(){
     return(
@@ -13,13 +12,9 @@ function Booking(){
             noValidate
             autoComplete="off"
         >
-            <Grid container spacing={2} className="back">
-                <Grid item xs={12} md={4} lg={4}>
-                <img src={Check} alt="check availability" width="100%" height="100%"/>
-                </Grid>
-                <Grid item xs={12} md={8} lg={8} className="transparency">
-                <div className="tranparency p-x">
-                <h2 className="margin-top margin-bottom">Make your Reservation</h2>
+            <Grid container spacing={0}>
+                <Grid item xs={12} className="bg-oranger">
+                <div className="padding-3">
                     <Grid container spacing={1}>
                 <Grid item xs={12} md={4} lg={4}>
                     <FormControl fullWidth>
@@ -47,8 +42,8 @@ function Booking(){
                     </FormControl>
                 </Grid>
                     </Grid>
-                    <div className="margin-top margin-bottom">
-                <Button variant="contained" color="primary">Make Payment</Button></div>
+                    <div>
+                <Button variant="outlined" color="primary">book a room</Button></div>
                 </div>
                 </Grid>
             </Grid>

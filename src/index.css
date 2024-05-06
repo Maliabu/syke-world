@@ -22,19 +22,17 @@ h1, h2, h4, h3{
   padding-right: 20% !important;
 }
 .main-page{
-  background: -webkit-linear-gradient(bottom, #16181c00, #16181c00), url("./images/syke.png");
+  background: -webkit-linear-gradient(right, #010101,#04040400, #04040400), url("./images/syke.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20% 0% 0% 0%;
+  padding: 15% 2% 0% 2%;
   margin: 0 !important;
 }
 .back{
   background-color: #1f2127;
 }
 .back-flipped{
-  background-image: url("images/back-flipped.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #16181cfb;
 }
 .black-card{
   background-color: #16181c;
@@ -88,8 +86,7 @@ h1, h2, h4, h3{
   transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .MuiDrawer-paper{
-  background: -webkit-linear-gradient(top, #0a0a0a95, #0c0c0c92), url("./images/background.jpg");
-  background-size: cover;
+  background-color: #16181c !important;
   color: rgb(210, 210, 211) !important;
   margin-top: 5% !important;
   width: 70%;
@@ -146,7 +143,7 @@ h1, h2, h4, h3{
   width: 100% !important;
 }
 .transparency{
-  background-color: #1a1c21;
+  background-color: #1a1c21d7;
 }
 .transparency-white{
   background-color: #ffffff;
@@ -173,8 +170,8 @@ h1, h2, h4, h3{
   padding-top: 10%;
 }
 .center{
-  margin-left: auto;
-  margin-right: auto;
+  align-items: center;
+  align-self: center;
 }
 .header{
   padding: 1% 5%;

@@ -31,7 +31,7 @@ function MessageUs(){
                 </Grid>
                     </Grid>
                     <div className="">
-                <Button variant="contained" color="primary">Submit</Button></div>
+                <Button variant="outlined" color="primary">Submit</Button></div>
                 </div>
                 </Grid>
             </Grid>
