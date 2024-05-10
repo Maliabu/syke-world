@@ -41,8 +41,8 @@ function Home(props){
         </div></Hidden>
                 <div className="rooms bg-oranger">
                 <Hidden smUp>
-                <div className="main-page-res padding-3">
-                    <div className="bg-oranger padding margin-top-syke">
+                <div className="main-page-res">
+                    <div className="bg-oranger padding">
                     <h4>welcome</h4>
                     <p className="lh padding start">Syke World Hotel welcomes you to comfort and luxury at a destination away yet feels right at home</p>
                     <div>
