@@ -11,18 +11,18 @@ import Booking from '../forms/Booking'
 
 function Home(props){
     return(
-        <div>
+        <div><Hidden smDown>
         <div className="main-page">
             <Grid container spacing={0}>
-            <Grid item xs={12} md={8} lg={8}><Hidden smDown><Booking/></Hidden>
-            <Hidden smUp>
+            <Grid item xs={12} md={8} lg={8}><Booking/>
+            {/* <Hidden smUp>
                 <div className="padding bg-oranger rooms">
                     <h4 className="border">welcome</h4>
                     <p className="lh padding">Syke World Hotel welcomes you to comfort and luxury at a destination away yet feels right at home</p>
                     <Button variant="outlined" color="primary" onClick={props.handletab3}> explore </Button>
                 </div>
                 <img src={TriangleBottom} alt="rooms" width="80%" height="20%"/>
-            </Hidden>
+            </Hidden> */}
             </Grid>
             <Grid item xs={1} md={1} lg={1}></Grid>        
             <Grid item xs={7} md={3} lg={3}>
@@ -38,22 +38,26 @@ function Home(props){
                 </Hidden>
             </Grid>
             </Grid>
-        </div>
+        </div></Hidden>
                 <div className="rooms bg-oranger">
-                <Hidden smUp><img src={Syke} alt="rooms" className="card-image"/></Hidden>
-                <Grid container spacing={0}>
-                <Grid item xs={12} md={5} lg={5} className="padding">
                 <Hidden smUp>
-                <div className="padding">
-                    <Hidden smDown>
-                    <p className="lh">Syke World Hotel welcomes you to comfort and luxury at a destination away yet feels right at home</p>
-                    </Hidden>
+                <div className="main-page-res padding-3">
+                    <div className="bg-oranger padding margin-top-syke">
+                    <h4>welcome</h4>
+                    <p className="lh padding start">Syke World Hotel welcomes you to comfort and luxury at a destination away yet feels right at home</p>
                     <div>
                         <Button variant="outlined" color="primary" onClick={props.handletab2}>discover</Button></div>
                     </div>
+                    <img src={TriangleBottom} alt="rooms" width="80%" height="10%"/>
+                </div>
                 </Hidden>
-                <div className="start">
-                <div>
+                <Grid container spacing={0}>
+                <Grid item xs={12} md={5} lg={5}>
+                <Hidden smUp>
+                <img src={Syke} alt="hotel" width="100%" height="40%"/>
+                </Hidden>
+                <div className="start padding">
+                <div className="bg-oranger">
                 <Button variant="outlined" color="primary"> single </Button>
                 <Button variant="outlined" color="primary"> double </Button>
                 <Button variant="outlined" color="primary"> deluxe </Button>

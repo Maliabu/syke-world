@@ -28,6 +28,13 @@ h1, h2, h4, h3{
   padding: 15% 2% 0% 2%;
   margin: 0 !important;
 }
+.main-page-res{
+  background: -webkit-linear-gradient(right, #01010100,#04040400), url("./images/syke-res.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15% 2% 0% 2%;
+  margin: 0 !important;
+}
 .back{
   background-color: #1f2127;
 }
@@ -88,9 +95,12 @@ h1, h2, h4, h3{
 .MuiDrawer-paper{
   background-color: #16181c !important;
   color: rgb(210, 210, 211) !important;
-  margin-top: 5% !important;
+  margin-top: 0% !important;
   width: 70%;
   margin-left: 0% !important;
+}
+.MuiPaper-root.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiPaper-elevation16{
+  margin: 0% !important;
 }
 .MuiDrawer-paper.right-drawer{
   background: -webkit-linear-gradient(top, #0a0a0a95, #0c0c0c92), url("./images/background.jpg");

@@ -31,7 +31,7 @@ function Rooms(props){
             <div className="page-2 rooms back">
             <Hidden smDown><h2 className="start margin-top">book with us</h2></Hidden>
             <Hidden smUp><h2 className="start margin-top-syke">book with us</h2></Hidden>
-                <h2 className="">Our Rooms</h2>
+                <h2 className="p-y">Our Rooms</h2>
                 <div>
                 <Grid container spacing={0} className="bg-oranger">
                     <Grid item xs={4}>
@@ -62,9 +62,9 @@ function Rooms(props){
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={12} md={4} lg={3}>
-                            <h2 className="padding">Single</h2>
-                            <p className="padding lh">Dont be fooled, our single room is not pressed for space. Come and enjoy luxury in our simple yet comfortable and yet affordable room</p>
+                <Grid item xs={12} md={4} lg={3} className="p-y">
+                            <h2>Single</h2>
+                            <p className="padding start lh">Dont be fooled, our single room is not pressed for space. Come and enjoy luxury in our simple yet comfortable and yet affordable room</p>
                             <div className="padding-3">
                             <Grid container spacing={1}>
                                 <Grid item xs={2}><Wifi/></Grid>
@@ -96,9 +96,9 @@ function Rooms(props){
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={12} md={4} lg={3}>
-                            <h2 className="padding">Double</h2>
-                            <p className="padding lh">With the double room, we bring you luxury and comfort in a much wider space so that you feel free and as comfortable as you wish to get. We have a generously spacious wardrobe and bath</p>
+                <Grid item xs={12} md={4} lg={3} className="p-y">
+                            <h2>Double</h2>
+                            <p className="padding lh start">With the double room, we bring you luxury and comfort in a much wider space so that you feel free and as comfortable as you wish to get. We have a generously spacious wardrobe and bath</p>
                             <div className="padding-3">
                             <Grid container spacing={1}>
                                 <Grid item xs={2}><Wifi/></Grid>
@@ -135,9 +135,9 @@ function Rooms(props){
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={12} md={4} lg={3}>
-                            <h2 className="padding">Deluxe</h2>
-                            <p className="padding lh">Yes it so much more than just luxury and comfort, its Deluxe, its just perfect for you to be everywhere and yet in one place. Enough room, cozy with a spacious bath and so much more.</p>
+                <Grid item xs={12} md={4} lg={3} className="p-y">
+                            <h2>Deluxe</h2>
+                            <p className="padding lh start">Yes it so much more than just luxury and comfort, its Deluxe, its just perfect for you to be everywhere and yet in one place. Enough room, cozy with a spacious bath and so much more.</p>
                             <div className="padding-3">
                             <Grid container spacing={1}>
                                 <Grid item xs={2}><Wifi/></Grid>

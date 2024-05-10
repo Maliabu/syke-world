@@ -28,7 +28,6 @@ function NavBar(props){
         document.documentElement.scrollTop = 0;
     }
     const toggleDrawer = e => {
-        console.log(e)
         if(
             e.type === "keydown" &&
             (e.key === "Tab" || e.key === "Shift")
@@ -72,7 +71,6 @@ function NavBar(props){
         setActiveTab("tab4");
     };
     const handleTab5 = e => {
-        console.log(e)
         // update the state to tab1
         setActiveTab("tab5");
     };
@@ -90,7 +88,7 @@ function NavBar(props){
     };
     return(
         <div>
-        <Grid container spacing={0} className="rooms nav-top" alignContent="center" alignItems="center" justifyContent="center">
+        <Grid container spacing={0} className="rooms nav-top">
         <Grid container className="bg-oranger">
             <Grid item xs={4} md={2} lg={2}>
                 <Hidden smUp><img src={Logo} alt="logo" width="100%" height="50%" className="margin-top p-x"/></Hidden>
@@ -151,24 +149,24 @@ function NavBar(props){
                 </div>
         </Grid>
         <Grid item xs={12}>
-                <TabItem title={<h3>Booking</h3>} onClick = {handleTab5} id="tab5" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>Booking</h3>} onClick = {handleTab5} id="tab5" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
                 <Grid item xs={12}>
-                <TabItem title={<h3>Menu</h3>} onClick = {handleTab4} id="tab4" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>Menu</h3>} onClick = {handleTab4} id="tab4" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
                 <Grid item xs={12}>
-                <TabItem title={<h3>Home</h3>} onClick = {handleTab1} id="tab1" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>Home</h3>} onClick = {handleTab1} id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
                 <Grid item xs={12}>
-                <TabItem title={<h3>Services</h3>} onClick = {handleTab3} id="tab3" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>Services</h3>} onClick = {handleTab3} id="tab3" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
                 <Grid item xs={12}>
-                <TabItem title={<h3>Rooms</h3>} onClick = {handleTab2} id="tab2" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>Rooms</h3>} onClick = {handleTab2} id="tab2" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
                 <Grid item xs={12} className="bb">
-                <TabItem title={<h3>About</h3>} onClick = {handleTab9} id="tab9" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>About</h3>} onClick = {handleTab9} id="tab9" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
-                <Button variant="outlined" color="primary" className="margin-top" onClick={handleTab15} activeTab={activeTab} setActiveTab={setActiveTab}> gallery </Button>
+                <Button variant="outlined" color="primary" className="margin-top" onClick={handleTab15} activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}> gallery </Button>
                     <h4 className="m-b-0 p-x actively">Syke World Hotel</h4>
                     <p className="m-t-2 p-x lh">{'\u00A9'}copyright@SykeWorldHotel<br/>All rights reserved<br/>{new Date().getFullYear()}</p>
         </Grid>

@@ -68,6 +68,7 @@
   font-size: small !important;
 }
 .MuiFormHelperText-root{
+  /* color: #f5bb5f !important; */
   color: #f5bb5f !important;
 }
 .bg-oranger{
