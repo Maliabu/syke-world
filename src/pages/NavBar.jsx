@@ -14,6 +14,7 @@ import Logo from '../images/logo-word.png'
 import HomeCheck from '../images/home-check.png'
 import HomeCheck1 from '../images/home-check1.png'
 import Gallery from './Gallery'
+import Paidha from "./Paidha";
 // import Messaging from '../images/message.png'
 // import MessageUs from '../forms/MessageUs'
 import { CallRounded, HomeRounded, Image, LocationCityRounded, MenuRounded } from "@material-ui/icons";
@@ -28,7 +29,6 @@ function NavBar(props){
         document.documentElement.scrollTop = 0;
     }
     const toggleDrawer = e => {
-        console.log(e)
         if(
             e.type === "keydown" &&
             (e.key === "Tab" || e.key === "Shift")
@@ -72,7 +72,6 @@ function NavBar(props){
         setActiveTab("tab4");
     };
     const handleTab5 = e => {
-        console.log(e)
         // update the state to tab1
         setActiveTab("tab5");
     };
@@ -88,10 +87,14 @@ function NavBar(props){
         // update the state to tab1
         setActiveTab("tab15");
     };
+    const handleTab16 = () => {
+        // update the state to tab1
+        setActiveTab("tab16");
+    };
     return(
         <div>
-        <Grid container spacing={0} className="rooms nav-top" alignContent="center" alignItems="center" justifyContent="center">
-        <Grid container className="bg-oranger">
+        <Grid container spacing={0} className="rooms nav-top">
+        <Grid container className="paidha">
             <Grid item xs={4} md={2} lg={2}>
                 <Hidden smUp><img src={Logo} alt="logo" width="100%" height="50%" className="margin-top p-x"/></Hidden>
                 <Hidden smDown><img src={Logo} alt="logo" width="70%" height="50%" className="p-xs margin-top"/></Hidden>
@@ -123,7 +126,9 @@ function NavBar(props){
                 <Grid item xs={1} lg={1}>
                 <TabItem title={<h4 className="tabs">Rooms</h4>} onClick = {handleTab2} id="tab2" activeTab={activeTab} setActiveTab={setActiveTab}/>
                 </Grid>
-                <Grid item xs={2} lg={2}></Grid>
+                <Grid item xs={2} lg={2}>
+                <TabItem title={<h4 className="tabs">PAIDHA TOWN</h4>} onClick = {handleTab16} id="tab16" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                </Grid>
                 <Grid item md={2} lg={2} className="bg-oranges" onClick = {handleTab15} id="tab15" activeTab={activeTab} setActiveTab={setActiveTab}>
                 <Grid container>
                     <Grid item xs={2}><Image/></Grid>
@@ -151,24 +156,24 @@ function NavBar(props){
                 </div>
         </Grid>
         <Grid item xs={12}>
-                <TabItem title={<h3>Booking</h3>} onClick = {handleTab5} id="tab5" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>Booking</h3>} onClick = {handleTab5} id="tab5" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
                 <Grid item xs={12}>
-                <TabItem title={<h3>Menu</h3>} onClick = {handleTab4} id="tab4" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>Menu</h3>} onClick = {handleTab4} id="tab4" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
                 <Grid item xs={12}>
-                <TabItem title={<h3>Home</h3>} onClick = {handleTab1} id="tab1" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>Home</h3>} onClick = {handleTab1} id="tab1" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
                 <Grid item xs={12}>
-                <TabItem title={<h3>Services</h3>} onClick = {handleTab3} id="tab3" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>Services</h3>} onClick = {handleTab3} id="tab3" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
                 <Grid item xs={12}>
-                <TabItem title={<h3>Rooms</h3>} onClick = {handleTab2} id="tab2" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h3>Rooms</h3>} onClick = {handleTab2} id="tab2" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
                 <Grid item xs={12} className="bb">
-                <TabItem title={<h3>About</h3>} onClick = {handleTab9} id="tab9" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                <TabItem title={<h2>About</h2>} onClick = {handleTab9} id="tab9" activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}/>
                 </Grid>
-                <Button variant="outlined" color="primary" className="margin-top" onClick={handleTab15} activeTab={activeTab} setActiveTab={setActiveTab}> gallery </Button>
+                <Button variant="outlined" color="primary" className="margin-top" onClick={handleTab15} activeTab={activeTab} setActiveTab={setActiveTab} show={open} setShow={setOpen}> gallery </Button>
                     <h4 className="m-b-0 p-x actively">Syke World Hotel</h4>
                     <p className="m-t-2 p-x lh">{'\u00A9'}copyright@SykeWorldHotel<br/>All rights reserved<br/>{new Date().getFullYear()}</p>
         </Grid>
@@ -202,7 +207,7 @@ function NavBar(props){
             </Grid>
         </Grid>
         <div>
-        <TabContent id="tab1" activeTab={activeTab}><Home handletab2 = {handleTab2} handletab3 = {handleTab3} handletab4 = {handleTab4}/></TabContent>
+        <TabContent id="tab1" activeTab={activeTab}><Home handletab2 = {handleTab2} handletab3 = {handleTab3} handletab4 = {handleTab4} handletab16={handleTab16}/></TabContent>
         <TabContent id="tab2" activeTab={activeTab}>
                 <Rooms handletab5 = {handleTab5}/>
                 {scrollToTop()}
@@ -231,35 +236,37 @@ function NavBar(props){
                 <Gallery/>
                 {scrollToTop()}
             </TabContent>
+            <TabContent id="tab16" activeTab={activeTab}>
+                <Paidha/>
+                {scrollToTop()}
+            </TabContent>
         </div>
-            <div className="p-x p-y rooms">
+            <div className="padding-3 rooms1 back-flipped start">
                 <Grid container spacing={2}>
-                <Grid item xs={12} md={4} lg={4}>
-                    <h4 className="m-b-0 p-x actively">Syke World Hotel</h4>
+                <Grid item xs={12} md={4} lg={4} className="p-x">
+                    <h4 className="m-b-0 p-x">Syke World Hotel</h4>
                     <p className="m-t-2 p-x lh">{'\u00A9'}copyright@SykeWorldHotel<br/>All rights reserved<br/>{new Date().getFullYear()}</p>
                 </Grid>
                 <Grid item xs={12} md={4} lg={4}>
             <Grid container spacing={0}>
-                <Grid item xs={4} lg={4}>
+                <Grid item xs={4} lg={12}>
                 <TabItem title={<h4>Menu</h4>} onClick = {handleTab4} id="tab4" activeTab={activeTab} setActiveTab={setActiveTab}/>
-                </Grid>
-                <Grid item xs={4} lg={4}>
-                <TabItem title={<h4 className="tabs">About</h4>} onClick = {handleTab9} id="tab9" activeTab={activeTab} setActiveTab={setActiveTab}/>
-                </Grid>
-                <Grid item xs={4} lg={4}>
+                
+                <TabItem title={<h4>About</h4>} onClick = {handleTab9} id="tab9" activeTab={activeTab} setActiveTab={setActiveTab}/>
+                
                 <Button variant="outlined" color="primary" className="margin-top" onClick={handleTab15} activeTab={activeTab} setActiveTab={setActiveTab}> gallery </Button>
                 </Grid>
             </Grid>
-                <div className="p-x start">
-                    <CallRounded/>
-                    <p className="m-t-2 lh">Contact Us<br/>For more inquiries and information call:<br/><br/>0782360252</p>
-                </div>
                 </Grid>
                 <Grid item xs={12} md={4} lg={4}>
                 <div className="p-x">
                     <LocationCityRounded/>
                     <p className="m-t-2 lh">Syke world is a hotel in paidha Town Council, Okoro County, Nothern Uganda - LandMark Place</p>
                     <Button variant="outlined" color="primary" onClick={handleTab9}>About Syke World</Button>
+                </div>
+                <div className="p-x start">
+                    <CallRounded/>
+                    <p className="m-t-2 lh">Contact Us<br/>For more inquiries and information call:<br/><br/>0782360252</p>
                 </div>
                 </Grid>
             </Grid>

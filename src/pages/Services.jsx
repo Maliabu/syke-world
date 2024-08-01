@@ -7,7 +7,7 @@ function Services(){
     return(
         <div>
         <div>
-            <div className="page-2 rooms back">
+            <div className="page-2 rooms paidha">
             <Hidden smDown><h2 className="start margin-top">services</h2></Hidden>
             <Hidden smUp><h2 className="start margin-top-syke">services</h2></Hidden>
                 <h2 className="">What we offer</h2>

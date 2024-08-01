@@ -12,7 +12,7 @@ function Booking(){
     return(
         <div>
         <div>
-            <div className="page-2 rooms back">
+            <div className="page-2 paidha rooms">
             <Hidden smDown><h2 className="start margin-top">account details</h2></Hidden>
             <Hidden smUp><h2 className="start margin-top-syke">account details</h2></Hidden>
                 <div className="center">
