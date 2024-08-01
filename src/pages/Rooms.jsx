@@ -28,12 +28,12 @@ function Rooms(props){
     };
     return(
         <div>
-            <div className="page-2 rooms back">
+            <div className="page-2 rooms paidha">
             <Hidden smDown><h2 className="start margin-top">book with us</h2></Hidden>
             <Hidden smUp><h2 className="start margin-top-syke">book with us</h2></Hidden>
                 <h2 className="p-y">Our Rooms</h2>
                 <div>
-                <Grid container spacing={0} className="bg-oranger">
+                <Grid container spacing={0} className="back-flipped">
                     <Grid item xs={4}>
                     <TabItem title={<h2>Single</h2>} onClick = {handleTab6} id="tab6" activeTab={activeTab} setActiveTab={setActiveTab}/>
                     </Grid>

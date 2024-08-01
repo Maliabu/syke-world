@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+  font-family: 'Segoe UI', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -139,6 +139,7 @@ h1, h2, h4, h3{
   z-index: 1;
   margin-top: 0% !important;
   position: fixed;
+  padding-top: 3px !important;
 }
 .nav-bottom{
   margin-top: 42% !important;
@@ -153,7 +154,7 @@ h1, h2, h4, h3{
   width: 100% !important;
 }
 .transparency{
-  background-color: #1a1c21d7;
+  background: -webkit-linear-gradient(top,rgba(0, 0, 0, 0.715),#020202, black);
 }
 .transparency-white{
   background-color: #ffffff;

@@ -13,7 +13,7 @@ function Booking(){
             autoComplete="off"
         >
             <Grid container spacing={0}>
-                <Grid item xs={12} className="bg-oranger">
+                <Grid item xs={12} className="paidha">
                 <div className="padding-3">
                     <Grid container spacing={1}>
                 <Grid item xs={12} md={4} lg={4}>

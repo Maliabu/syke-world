@@ -11,7 +11,7 @@ import Tea from '../images/tea.png'
 function Menu(){
     return(
         <div>
-            <div className="page-2 rooms back">
+            <div className="page-2 rooms paidha">
             <Hidden smDown><h2 className="start margin-top">take a look!</h2></Hidden>
             <Hidden smUp><h2 className="start margin-top-syke">take a look!</h2></Hidden>
                 <h2 className="">Our Breakfast Treat</h2>
